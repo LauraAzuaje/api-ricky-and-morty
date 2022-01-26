@@ -11,7 +11,6 @@ ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path='/' element={<NavBar/>}>
-
       <Route path='/' element={<Home/>}/>
       <Route path='/characters' element={<Characters/>}/>
       <Route path='*' element={<Navigate replace to='/'/>}/>

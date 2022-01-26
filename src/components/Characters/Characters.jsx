@@ -38,6 +38,13 @@ export function Characters() {
         fetchApi("https://rickandmortyapi.com/api/character/");
     }   
 
+    const onGenderless = () =>{
+        fetchApi("https://rickandmortyapi.com/api/character/?gender=GENDERLESS");
+    }  
+
+    const onUnknow = () =>{
+        fetchApi("https://rickandmortyapi.com/api/character/?gender=UNKNOW");
+    } 
 
     useEffect(() =>{
       fetchApi(url)
@@ -45,10 +52,12 @@ export function Characters() {
   
     return(
         <>
-        <div>
+        <div className='button'>
         <Button name="Filter Male" onChange={onMale} page={true}/>
-        <Button name="No Filter" onChange={onFilter} page={true}/>
         <Button name="Filter Female" onChange={onFemale} page={true}/>
+        <Button name="Filter Genderless" onChange={onGenderless} page={true}/>
+        <Button name="Filter Unknow" onChange={onUnknow} page={true}/>
+        <Button name="Refresh" onChange={onFilter} page={true}/>
         </div>
          <div className='container_cards'>
              {characters.map(
@@ -64,7 +73,7 @@ export function Characters() {
                 />)
                 )}
          </div>
-         <div>
+         <div className='button'>
         <Button name="Prev" onChange={onPrev} page={info.prev}/>
         <Button name="Next" onChange={onNext} page={info.next}/>
         </div>

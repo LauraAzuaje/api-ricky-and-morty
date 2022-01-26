@@ -4,3 +4,9 @@
     flex-wrap: wrap;
     background: #000;
 }
+
+.button {
+    background: #000;
+    display: flex;
+    justify-content: space-around;
+}
