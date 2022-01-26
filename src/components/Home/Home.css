@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Creepster&family=Quicksand:wght@300&family=Raleway:wght@100&display=swap');
+
+#principalArticle{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+    background: #000;
+}
+
+#principalArticle .image{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 50vh;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+#principalArticle .image img{
+    width: 60%;
+    height: auto;
+}
+
+#principalArticle .description{
+    display: flex;
+    width: 60vw;
+    flex-direction: column;
+    height: 50vh;
+    color: #fff;
+    font-family: 'Arima Madurai', cursive;
+    text-align: justify;
+    padding: 1vh;
+    align-items: center;
+    overflow: auto;
+}
+
+#principalArticle .description h1{
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 2px;
+    font-size: 38px;
+    font-family: 'Creepster', cursive;
+}
+
+#principalArticle .description p{
+    font-size: 14px;
+    padding: 1vw;
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Creepster&family=Quicksand:wght@300&family=Raleway:wght@100&display=swap');
+
+header {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    height: 10vh;
+    justify-content: space-evenly;
+    width: 100vw;
+  }
+  
+  ol {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 35vw;
+  }
+  
+  li a {
+    text-decoration: none;
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Arima Madurai', cursive;
+  }
+  
