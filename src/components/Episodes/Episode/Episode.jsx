@@ -30,10 +30,7 @@ export function Episode(props) {
                   <Character 
                   name={item.name}
                   key={item.id}
-                  avatar={item.image}
-                  origin={item.origin.name}
-                  gender={item.gender}
-                  status={item.status}/>
+                  avatar={item.image}/>
                 ))}
             </div>
         </div>

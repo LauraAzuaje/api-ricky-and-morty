@@ -21,6 +21,9 @@ export function NavBar() {
         <div>
             <Outlet/>
         </div>
+        <footer>
+            <p>SITE BY LAURA AZUAJE</p>
+        </footer>
         </>
     );
 };

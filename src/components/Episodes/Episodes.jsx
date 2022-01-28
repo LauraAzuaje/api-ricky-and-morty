@@ -32,12 +32,9 @@ export function Episodes(){
   }, [])
 
     return(
+    <>
         <article
         id="articleEpisodes">
-         <div className="buttonNav">
-      <Button name={"Previous Page"} page={info.prev} onChange={onPrevious} />
-      <Button name={"Next Page"} page={info.next} onChange={onNext} />
-      </div>
       {episodes.map((episode)=>(
             <Episode
                 key={episode.id}
@@ -47,10 +44,11 @@ export function Episodes(){
                 charactersList={episode.characters}
             />
         ))}
-        <div className="buttonNav">
+        </article>
+            <div className="button">
       <Button name={"Previous Page"} page={info.prev} onChange={onPrevious} />
       <Button name={"Next Page"} page={info.next} onChange={onNext} />
-      </div>
-        </article>
+            </div>
+     </>         
     );
 }

@@ -5,6 +5,7 @@ import './Characters.css'
 import { Button } from './Button/Button';
 
 
+
 export function Characters() {
     const [characters, setCharacters ] = useState([]);
     const [info, setInfo] = useState([]);
@@ -60,6 +61,7 @@ export function Characters() {
         <Button name="Refresh" onChange={onFilter} page={true}/>
         </div>
          <div className='container_cards'>
+       
              {characters.map(
                (character) => (
                   <Character
@@ -72,6 +74,7 @@ export function Characters() {
                   origin={character.origin.name}
                 />)
                 )}
+          
          </div>
          <div className='button'>
         <Button name="Prev" onChange={onPrev} page={info.prev}/>

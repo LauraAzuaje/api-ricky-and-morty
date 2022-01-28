@@ -24,4 +24,14 @@ header {
     color: #fff;
     font-family: 'Arima Madurai', cursive;
   }
+
+  footer{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    font-family: 'Raleway';
+    justify-content: center;
+  }
   
