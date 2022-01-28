@@ -13,6 +13,9 @@ export function NavBar() {
                 <li>
                 <Link to='/characters'>Characters</Link>
                 </li>
+                <li>
+                <Link to="/episodes">Episodes</Link>
+                </li>
         </ol>
         </header>
         <div>

@@ -1,0 +1,8 @@
+#articleEpisodes {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100vw;
+    justify-content: space-around;
+    background: #000;
+  }
