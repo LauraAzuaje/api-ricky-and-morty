@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Creepster&family=Quicksand:wght@300&family=Raleway:wght@100&display=swap');
 
-
+.characterCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 263px;
+    height: 316px;
+    align-items: center;
+}
 .characterCard .characterImage{
     display: flex;
     justify-content: center;
@@ -29,4 +38,10 @@
     width: 12vw;
     justify-content: space-between;
     align-items: center;
+}
+
+@media screen and (max-width:400px)
+{.characterCard{
+    min-width: 220px;
+}
 }

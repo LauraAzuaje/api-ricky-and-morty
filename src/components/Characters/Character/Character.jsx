@@ -1,6 +1,6 @@
 import React from "react";
 import './Character.css'
-
+    
 export function Character (props) {
     const {avatar, name, status, species, gender, origin}=props
     return (
